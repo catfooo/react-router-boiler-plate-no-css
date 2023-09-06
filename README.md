@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-# React Router Boilerplate for Technigo Students
+# React Router Boilerplate
 
 ### React + Vite + React Router Library
 
