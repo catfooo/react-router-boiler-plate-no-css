@@ -33,6 +33,18 @@ React Router Boiler Plate - Minimal CSS
 
 - **React Router:** React Router is an external library for React that provides routing capabilities. It allows developers to create multi-page applications within React, enabling navigation between different components without reloading the entire page.
 
+## Getting Started with the Project
+
+### 1. **Clone the Repository**:
+First, you'll need to get a copy of the repository on your local machine. You can do this using git. There are two common methods to clone a repository: USing the gitHUb CLI, HTTPS and SSH.
+
+#### 1.1. **Using HTTPS**:
+This is the default method and works universally. Simply copy the HTTPS URL from the repository's main page and use the following command:
+```bash
+git clone https://github.com/username/repository-name.git
+
+
+
 ## Installing the React Library
 
 React Router is an essential library for routing in React applications. There are a couple of ways you can install it, depending on your project's needs.
