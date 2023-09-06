@@ -40,8 +40,19 @@ First, you'll need to get a copy of the repository on your local machine. You ca
 
 #### 1.1. **Using HTTPS**:
 This is the default method and works universally. Simply copy the HTTPS URL from the repository's main page and use the following command:
+
 ```bash
 git clone https://github.com/username/repository-name.git
+```
+
+#### 1.2. **Using SSH**:
+For those who have set up SSH keys with GitHub, this method provides a secure way without needing to enter your credentials every time. First, <a target="_blank" rel="noopener noreferrer" href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh ">
+ensure you've set up SSH keys with GitHub
+</a>  . Then, copy the SSH URL from the repository's main page and use the following command:
+
+```bash
+git clone https://github.com/username/repository-name.git
+```
 
 
 
