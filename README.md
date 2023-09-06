@@ -42,7 +42,7 @@ First, you'll need to get a copy of the repository on your local machine. You ca
 This is the default method and works universally. Simply copy the HTTPS URL from the repository's main page and use the following command:
 
 ```bash
-git clone https://github.com/username/repository-name.git
+https://github.com/Technigo/react-router-boiler-plate-no-css.git
 ```
 
 #### 1.2. **Using SSH**:
@@ -52,7 +52,14 @@ ensure you've set up SSH keys with GitHub
 
 
 ```bash
-git clone https://github.com/username/repository-name.git
+git clone git@github.com:Technigo/react-router-boiler-plate-no-css.git
+```
+
+#### 1.3. **Using Github CLI**:
+If you have the [GitHub CLI](https://cli.github.com/) installed, you can easily clone the repository and even perform many other GitHub operations directly from the command line. To clone the repository using GitHub CLI, use the following command:
+
+```bash
+gh repo clone Technigo/react-router-boiler-plate-no-css
 ```
 
 
