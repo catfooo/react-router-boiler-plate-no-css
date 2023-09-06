@@ -36,7 +36,7 @@ React Router Boiler Plate - Minimal CSS
 ## Getting Started with the Project
 
 ### 1. **Clone the Repository**:
-First, you'll need to get a copy of the repository on your local machine. You can do this using git. There are two common methods to clone a repository: USing the gitHUb CLI, HTTPS and SSH.
+First, you'll need to get a copy of the repository on your local machine. You can do this using git. There are three common methods to clone a repository: USing the gitHub CLI, HTTPS and SSH.
 
 #### 1.1. **Using HTTPS**:
 This is the default method and works universally. Simply copy the HTTPS URL from the repository's main page and use the following command:
@@ -50,9 +50,7 @@ For those who have set up SSH keys with GitHub, this method provides a secure wa
 ensure you've set up SSH keys with GitHub
 </a>  . Then, copy the SSH URL from the repository's main page and use the following command:
 
-```bash
-git clone https://github.com/username/repository-name.git
-```
+
 
 
 
