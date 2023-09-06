@@ -51,7 +51,9 @@ ensure you've set up SSH keys with GitHub
 </a>  . Then, copy the SSH URL from the repository's main page and use the following command:
 
 
-
+```bash
+git clone https://github.com/username/repository-name.git
+```
 
 
 ## Installing the React Library
