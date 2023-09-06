@@ -45,7 +45,7 @@ npm install react-router-dom
 
 With this boilerplate, you're not just getting a template; you're getting a head start. Dive in and make the most of your learning journey with Technigo!
 
-### Navigating through this repository
+## Navigating through this repository
 
 #### 1. **Routes Configuration (`src/routes/routes.jsx`)**:
 
