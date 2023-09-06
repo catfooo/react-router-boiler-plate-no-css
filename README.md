@@ -62,6 +62,16 @@ If you have the [GitHub CLI](https://cli.github.com/) installed, you can easily 
 gh repo clone Technigo/react-router-boiler-plate-no-css
 ```
 
+### 2. **Dependency Installation & Startup Development Server**:
+Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
+
+The above command is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
+
+```bash
+npm i && code . && npm run dev 
+```
+
+
 
 ## Installing the React Library
 
@@ -73,7 +83,7 @@ For a straightforward installation of just the React Router library, you can use
 npm install react-router-dom
 ```
 
-With this boilerplate, you're not just getting a template; you're getting a head start. Dive in and make the most of your learning journey with Technigo!
+However with this boilerplate, you're not just getting a template; you're getting a head start. Dive in and make the most of your learning journey with Technigo!
 
 ## Navigating through this repository
 
