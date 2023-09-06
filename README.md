@@ -28,7 +28,6 @@ React Router Boiler Plate - Minimal CSS
 
 - **Vite Integration:** Experience the speed and efficiency of Vite, ensuring your React projects are lightning-fast.
 - **Hot Module Replacement (HMR):** No more manual reloads. With HMR, see your changes in real-time as you code.
-- **ESLint Rules:** Maintain code quality and consistency with pre-configured ESLint rules.
 
 ## Custom Integrations:
 
