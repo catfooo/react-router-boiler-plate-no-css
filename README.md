@@ -42,7 +42,7 @@ First, you'll need to get a copy of the repository on your local machine. You ca
 This is the default method and works universally. Simply copy the HTTPS URL from the repository's main page and use the following command:
 
 ```bash
-https://github.com/Technigo/react-router-boiler-plate-minimal-css.git
+git clone https://github.com/Technigo/react-router-boiler-plate-minimal-css.git
 ```
 
 #### 1.2. **Using SSH**:
