@@ -28,12 +28,6 @@ function Home() {
       After these steps have being performed, we recommend removing these
       files to keep the folder structure minimal and easier to navigate.
     </li>
-    <li>
-      If you are feeling lazy you use this
-      <a href="http://" target="_blank" rel="noopener noreferrer">
-        minimal starter with no styling
-      </a>
-    </li>
   </ul>`,
   };
 
