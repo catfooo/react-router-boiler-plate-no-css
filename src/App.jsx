@@ -1,20 +1,16 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Welcome } from './Welcome'
-import { About } from './About'
-import { Contact } from './Contact'
-import { Nav } from './Nav'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BurgerList } from './pages/BurgerList'
+import { ShowBurger } from "./pages/ShowBurger";
 
 export const App = () => {
-    return (
-      <BrowserRouter>
-        <main>
-          <Nav />
-          <Routes>
-            <Route path="/" element={<Welcome />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </main>
-      </BrowserRouter>   
-    )
+  return (
+    <BrowserRouter>
+      <main>
+        <Routes>
+            <Route path="/" element={<BurgerList />} />
+            <Route path="/burgers/:slug" element={<ShowBurger />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
+  )
 }
