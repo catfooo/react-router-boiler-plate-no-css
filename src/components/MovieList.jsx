@@ -1,8 +1,11 @@
-// src/components/MovieList.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const MovieList = ({ movies }) => {
+const MovieList = ({ movies, loading }) => {
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
       <h1>Upcoming Movies</h1>

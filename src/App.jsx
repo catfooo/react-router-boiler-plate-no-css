@@ -2,10 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MovieDetail from './components/MovieDetail';
-import MovieList from './components/MovieList'; // Import a new component for displaying the list
+import MovieList from './components/MovieList';
 
 export const App = () => {
   const [movies, setMovies] = useState([]);
+  const [loading, setLoading] = useState(true); // Initialize loading state
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -15,8 +16,10 @@ export const App = () => {
         );
         const data = await response.json();
         setMovies(data.results);
+        setLoading(false); // Set loading to false when the data is fetched
       } catch (error) {
         console.error('Error fetching movies:', error);
+        setLoading(false); // Handle error and set loading to false
       }
     };
 
@@ -29,7 +32,7 @@ export const App = () => {
         <Routes>
           <Route path="/movie/:movieId" element={<MovieDetail />} />
           {/* Render the MovieList component and pass the fetched movies data */}
-          <Route path="/" element={<MovieList movies={movies} />} />
+          <Route path="/" element={<MovieList movies={movies} loading={loading} />} />
           {/* Add more routes here if needed */}
         </Routes>
       </div>
