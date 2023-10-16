@@ -4,6 +4,7 @@ import { useParams, Navigate } from 'react-router-dom';
 const MovieDetail = () => {
   const { movieId } = useParams();
   const [movie, setMovie] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
@@ -22,11 +23,17 @@ const MovieDetail = () => {
         }
       } catch (error) {
         console.error('Error fetching movie data:', error);
+      } finally {
+        setLoading(false); // Set loading to false regardless of success or error
       }
     };
 
     fetchMovieData();
   }, [movieId]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   if (notFound) {
     // Render a "not found" message or component
@@ -34,7 +41,8 @@ const MovieDetail = () => {
   }
 
   if (!movie) {
-    return <div>Loading...</div>;
+    // Optionally, handle the case when movie data is not available
+    return <div>Movie data is not available.</div>;
   }
 
   // Define a style object with the background image
