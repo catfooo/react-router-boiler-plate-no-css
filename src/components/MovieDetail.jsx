@@ -1,10 +1,10 @@
-// src/components/MovieDetail.js
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 
 const MovieDetail = () => {
   const { movieId } = useParams();
   const [movie, setMovie] = useState(null);
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     const fetchMovieData = async () => {
@@ -12,8 +12,14 @@ const MovieDetail = () => {
         const response = await fetch(
           `https://api.themoviedb.org/3/movie/${movieId}?api_key=f9d2ab558f2c2df91f363af32212587c&language=en-US`
         );
-        const data = await response.json();
-        setMovie(data);
+        
+        if (response.status === 404) {
+          // Movie not found
+          setNotFound(true);
+        } else {
+          const data = await response.json();
+          setMovie(data);
+        }
       } catch (error) {
         console.error('Error fetching movie data:', error);
       }
@@ -21,6 +27,11 @@ const MovieDetail = () => {
 
     fetchMovieData();
   }, [movieId]);
+
+  if (notFound) {
+    // Render a "not found" message or component
+    return <div>Movie not found</div>;
+  }
 
   if (!movie) {
     return <div>Loading...</div>;
